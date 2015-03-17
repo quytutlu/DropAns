@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundth"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="259dp"
+                android:layout_height="156dp"
+                android:layout_gravity="center"
+                android:background="@drawable/logo" />
+            <EditText
+                android:id="@+id/tendangnhap"
+                android:layout_width="246dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="5sp"
+                android:background="@drawable/user"
+                android:ellipsize="start"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Tên đăng nhập"
+                android:inputType="textWebEmailAddress"
+                android:maxLength="20"
+                android:paddingLeft="10sp" >
+                <requestFocus />
+            </EditText>
+            <EditText
+                android:id="@+id/matkhau"
+                android:layout_width="246dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="5sp"
+                android:background="@drawable/user"
+                android:ellipsize="end"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Mật khẩu"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:paddingLeft="10sp" />
+            <EditText
+                android:id="@+id/golaimatkhau"
+                android:layout_width="246dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="5sp"
+                android:background="@drawable/user"
+                android:ellipsize="end"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Nhập lại mật khẩu"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:paddingLeft="10sp" />
+            <EditText
+                android:id="@+id/sodienthoai"
+                android:layout_width="246dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="5sp"
+                android:background="@drawable/user"
+                android:ellipsize="end"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Số điện thoại"
+                android:inputType="number"
+                android:paddingLeft="10sp" />
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="246dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="5sp"
+                android:background="@drawable/user"
+                android:ellipsize="end"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Email"
+                android:inputType="textWebEmailAddress"
+                android:paddingLeft="10sp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" >
+                <Button
+                    android:id="@+id/dangky"
+                    android:layout_width="81dp"
+                    android:layout_height="36dp"
+                    android:background="@drawable/register"
+                    android:onClick="onClick" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
